@@ -13,7 +13,6 @@ from nltk.corpus import stopwords
 russian_stopwords = stopwords.words("russian")
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-% matplotlib inline
 text_raw = " ".join(text)
 wordcloud = WordCloud(stopwords = russian_stopwords).generate(text_raw)
 wordcloud.to_file('result.png')
